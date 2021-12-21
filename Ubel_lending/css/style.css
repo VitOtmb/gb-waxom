@@ -1,0 +1,688 @@
+/* line 1, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 3;
+}
+
+/* line 12, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 18, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* line 23, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.menu_link:hover {
+  color: #1EACC7;
+}
+
+/* line 25, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 42px;
+}
+
+/* line 28, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 31, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 37, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 41, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 40;
+}
+
+/* line 47, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 53, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+/* line 63, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 78, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/uber_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 82, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 90, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 99, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 106, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 122, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 124, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 127, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 132, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1EACC7;
+  border-radius: 100%;
+}
+
+/* line 141, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 143, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1EACC7;
+  font-size: 17px;
+}
+
+/* line 148, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 154, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 166, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 175, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+  padding: 46px 0 61px 0;
+}
+
+/* line 179, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item {
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 19px;
+  padding-top: 88px;
+}
+
+/* line 186, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/card_1_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 188, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/card_2_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 190, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/card_3_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 192, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/card_4_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 194, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/card_5_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 196, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/card_6_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 198, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 205, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  width: 29px;
+  height: 29px;
+  background: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 219, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_plus::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 226, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_plus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 14px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 237, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+  background-color: #FF5656;
+}
+
+/* line 239, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 30px;
+}
+
+/* line 242, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
+}
+
+/* line 249, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 137px 0;
+  background: url("../img/choice_bg.png") center center/cover no-repeat;
+  z-index: 1;
+}
+
+/* line 255, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice_black_wrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: -1;
+}
+
+/* line 263, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice .label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #070716;
+  background: #FFFFFF;
+  z-index: 3;
+}
+
+/* line 271, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 30px;
+  margin: 26px 0 0 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 279, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice .subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 12px 0 0 0;
+  color: #FFFFFF;
+}
+
+/* line 286, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice_car {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 1;
+}
+
+/* line 291, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.choice_text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #222222;
+}
+
+/* line 299, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require {
+  padding: 66px 0 87px 0;
+}
+
+/* line 301, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require .title {
+  line-height: 30px;
+}
+
+/* line 303, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require_title {
+  margin-top: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #1CA8C3;
+}
+
+/* line 309, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require .red_color {
+  color: #FF5656;
+}
+
+/* line 311, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding-left: 50px;
+}
+
+/* line 315, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require_list li {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  color: #222222;
+  padding: 0 0 5px 0;
+  position: relative;
+}
+
+/* line 322, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require_list li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../icons/check/check_blue.png) center center/cover no-repeat;
+  left: -30px;
+  top: 5px;
+}
+
+/* line 333, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require .red_elem li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../icons/check/check_red.png) center center/cover no-repeat;
+  left: -30px;
+  top: 5px;
+}
+
+/* line 343, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.require_descr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  color: #1CA8C3;
+  margin: 25px 0 28px 0;
+}
+
+/* line 350, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.world {
+  min-height: 716px;
+  padding: 46px 0 50px 0;
+  background: url("../img/world_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 354, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.world .label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #070716;
+  background: #FFFFFF;
+}
+
+/* line 361, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.world .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 30px;
+  margin: 26px 0 0 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 369, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.world .subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 12px 0 0 0;
+  color: #FFFFFF;
+}
+
+/* line 376, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.world .world_link {
+  display: block;
+  text-align: center;
+  margin-top: 500px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  cursor: pointer;
+}
+
+/* line 387, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper {
+  min-height: 156px;
+  padding: 12px 21px 40px 21px;
+}
+
+/* line 390, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_line {
+  width: 301px;
+  height: 7px;
+  margin: 0 auto;
+  background: #1FBAD6;
+}
+
+/* line 395, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 398, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content {
+  margin-top: 32px;
+}
+
+/* line 400, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content_nav {
+  margin-left: 190px;
+}
+
+/* line 403, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content_nav a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-right: 50px;
+  color: #070716;
+}
+
+/* line 412, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content_info {
+  display: flex;
+  margin: 16px 0 0 181px;
+}
+
+/* line 415, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content_info a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding-right: 25px;
+  color: #999999;
+}
+
+/* line 424, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content .rus {
+  margin: 20px 0 0 357px;
+}
+
+/* line 426, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .content .rus a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #1FBAD6;
+}
+
+/* line 434, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .platform {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 51px;
+  width: 300px;
+}
+
+/* line 440, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .footer_wrp .platform_link img {
+  width: 94px;
+  height: 27px;
+}
+
+/* line 443, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .social_icon {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  margin: 37px 0 34px 0;
+}
+
+/* line 448, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .social_icon .social_elem {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #070716;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 456, ../../../Web_learn/Udemy/Web-dev-2021/Uber_lending/src/sass/_general.sass */
+.footer_wrapper .social_icon .social_elem i {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
